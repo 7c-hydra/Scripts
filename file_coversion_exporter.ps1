@@ -1,4 +1,4 @@
-# Specify the input and output file paths
+# (Fix) Specify the input and output file paths (Fix)
 $FileName = "C:\Users\User\Desktop\file.exe"
 $OutputTextFile = "C:\Users\User\Desktop\file.exe.txt"
 
@@ -6,8 +6,9 @@ $OutputTextFile = "C:\Users\User\Desktop\file.exe.txt"
 $base64string = [Convert]::ToBase64String([IO.File]::ReadAllBytes($FileName))
 [IO.File]::WriteAllText($OutputTextFile, $base64string)
 
+---------
 
-# Specify the input text file and the output file
+# (Fix) Specify the input text file and the output file (Fix) 
 $InputTextFile = "C:\Users\User\Desktop\file.exe.txt"
 $DecodedFileName = "C:\Users\User\Desktop\file.exe"
 
